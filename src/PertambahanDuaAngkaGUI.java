@@ -130,6 +130,11 @@ public class PertambahanDuaAngkaGUI extends javax.swing.JFrame {
 
         hapusBtn.setBackground(new java.awt.Color(255, 255, 153));
         hapusBtn.setText("Hapus");
+        hapusBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hapusBtnActionPerformed(evt);
+            }
+        });
 
         keluarBtn.setBackground(new java.awt.Color(255, 255, 153));
         keluarBtn.setText("Keluar");
@@ -216,6 +221,14 @@ public class PertambahanDuaAngkaGUI extends javax.swing.JFrame {
         
         hasilTF.setText(Integer.toString(hasil));
     }//GEN-LAST:event_hasilTFActionPerformed
+
+    private void hapusBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusBtnActionPerformed
+        // TODO add your handling code here:
+            angkaPertamaTF.setText("");
+    angkaKeduaTF.setText(null);
+    hasilTF.setText("");
+    angkaPertamaTF.requestFocus();
+    }//GEN-LAST:event_hapusBtnActionPerformed
 
     /**
      * @param args the command line arguments
