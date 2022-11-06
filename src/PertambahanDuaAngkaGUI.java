@@ -203,13 +203,14 @@ public class PertambahanDuaAngkaGUI extends javax.swing.JFrame {
           JOptionPane.showMessageDialog(null, "Input Tidak boleh kosong");
             
         }   else {
-        }
-        int angkaPertama = Integer.valueOf(angkaPertamaTF.getText());
+           int angkaPertama = Integer.valueOf(angkaPertamaTF.getText());
         int angkaKedua = Integer.valueOf(angkaKeduaTF.getText());
         
         int hasil = angkaPertama + angkaKedua;
         
         hasilTF.setText(Integer.toString(hasil));
+        }
+        
     }//GEN-LAST:event_tambahBtnActionPerformed
 
     private void hasilTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hasilTFActionPerformed
